@@ -1,0 +1,105 @@
+.skill-parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill {
+  width: 70vw;
+  height: 70vh;
+}
+.skill > h1,
+.skill > h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skill > h1 {
+  margin-bottom: 5px;
+}
+.skill-body {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 100px;
+}
+.each-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid var(--main-color);
+  margin-bottom: 20px;
+  width: fit-content;
+  height: fit-content;
+  animation: var(--opacity);
+  position: relative;
+}
+.each-skill > img {
+  animation: glow 2s linear infinite alternate;
+}
+.each-skill > div {
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  height: 0%;
+  width: 100%;
+  transition: 0.5s ease-out;
+}
+.each-skill > h4 {
+  position: absolute;
+  bottom: -38px;
+  padding: 4px;
+  opacity: 0;
+  border: 2px solid var(--main-color);
+  transition: 0.5s;
+}
+.each-skill:hover > h4 {
+  opacity: 1;
+}
+.each-skill:hover > div {
+  z-index: -43;
+}
+.each-skill:hover > h3 {
+  color: var(--main-bg);
+}
+.each-skill:hover > .html {
+  height: 80%;
+}
+.each-skill:hover > .css {
+  height: 80%;
+}
+.each-skill:hover > .bootstrap {
+  height: 80%;
+}
+.each-skill:hover > .js {
+  height: 50%;
+}
+.each-skill:hover > .jQuery {
+  height: 30%;
+}
+.each-skill:hover > .react {
+  height: 45%;
+}
+.each-skill:hover > .php {
+  height: 30%;
+}
+.each-skill:hover > .mysql {
+  height: 30%;
+}
+@media (max-width: 920px) {
+  .skill-body {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 600px) {
+  .skill-body {
+    gap: 50px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 450px) {
+  .skill-body {
+    grid-template-columns: auto auto;
+  }
+}

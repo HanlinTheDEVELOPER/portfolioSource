@@ -1,0 +1,60 @@
+.about-parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  border: 3px solid var(--main-color);
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.about > h1 {
+  text-align: center;
+}
+.about-body,
+.about-footer {
+  width: 80%;
+}
+.about-footer {
+  text-align: center;
+}
+.about-footer > h5,
+.about-footer > h4 {
+  margin-bottom: 10px;
+}
+.logo {
+  position: absolute;
+  top: 5px;
+  width: 45px;
+  animation: react-logos 3s linear infinite;
+}
+.logo-right {
+  right: 5px;
+}
+.logo-left {
+  left: 5px;
+}
+.about h1,
+.about h3,
+.about h4,
+.about h5 {
+  animation: var(--opacity);
+}
+.socials-logo {
+  text-decoration: none;
+  color: inherit;
+  margin-inline: 10px;
+}
+@media (max-width: 380px) {
+  .about-body > h3 {
+    font-size: 1rem;
+  }
+}
