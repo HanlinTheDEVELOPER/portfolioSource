@@ -38,7 +38,7 @@ const Contact = () => {
                 <MdEmail />
               </a>
               <a
-                href="https://www.messenger.com/t/100020091776930/"
+                href="https://m.me/100087520487148/"
                 className="contact-icons"
                 target="_blank"
               >

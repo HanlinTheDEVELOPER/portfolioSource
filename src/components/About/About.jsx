@@ -37,7 +37,7 @@ const About = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=100020091776930"
+                href="https://www.facebook.com/profile.php?id=100087520487148"
                 target="_blank"
                 className="socials-logo"
               >
