@@ -101,7 +101,7 @@
     width: 250px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .portfolio {
     grid-template-columns: auto;
   }
